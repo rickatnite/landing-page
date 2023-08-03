@@ -8,33 +8,43 @@ body {
 .container {
 display: flex;
 background-color: #1F2937;
-}
-
-.header {
 height: 72px;
 color: #F9FAF8;
-background: aquamarine;
-align-items: center;
-padding: 0 8px;
+justify-content: space-between;
 font-size: 24px;
+}
+
+.links {
+padding: 8px;
 }
 
 ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
+gap: 16px;
 }
 
 li {
 margin-bottom: 8px;
 color: #E5E7EB;
 font-size: 18px;
+list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* img.container {
+    width: 400px;
+    height: auto;
+} */
+
 img {
-    width: 100px;
-    height: 100px;
-    object-fit: fill;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 
