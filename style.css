@@ -1,7 +1,13 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    flex: 1;
     min-height: 100vh;
     align-items: stretch;
     justify-content: space-between;
@@ -11,15 +17,15 @@ body {
 .header {
     display: flex;
     background-color: #1F2937;
-    justify-content: space-between;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 0 200px;
 }
 
 .head {
     height: 100px;
     display: flex;
     align-items: center;
+    padding: 50px 100px;
 }
 
 .logo {
@@ -66,6 +72,33 @@ img {
     display: flex;
     color: #F9FAF8;
     height: 400px;
+    /* justify-content: center; */
+    /* flex-shrink: 1; */
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* gap: 50px; */
+    /* flex: 1 1 0; */
+    padding: 50px 100px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.left {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+}
+
+.right img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 button {
@@ -84,24 +117,50 @@ button {
     color: #E5E7EB;
 }
 
-.two.h1 {
+/* .two.h1 {
     font-weight: bolder;
     font-size: 36px;
     color: #1F2937;
+    margin-bottom: 30px;
+    text-align: center;
+} */
+
+h1.two {
+    display: flex;
+    font-weight: bolder;
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 30px;
+    /* justify-content: center; */
+    text-align: center;
 }
 
 .two {
     display: flex;
     height: 400px;
-    padding: 0 100px;
+    padding: 0 200px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item {
+    max-width: 200px;
 }
 
 .three {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
     height: 400px;
     background-color: #E5E7EB;
-    padding: 0 100px;
+    padding: 0 200px;
+    flex-direction: column;
 }
 
 .text {
@@ -112,15 +171,17 @@ button {
 }
 
 .name {
+    display: flex;
     font-weight: bolder;
     font-size: x-large;
+    align-self: flex-end;
 }
 
 .four {
     display: flex;
     height: 200px;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 200px;
     margin: 100px 200px;
     color: #F9FAF8;
 }
@@ -135,7 +196,7 @@ button {
     background-color: #1F2937;
     color: #F9FAF8;
     height: 100px;
-    padding: 0 100px;
+    padding: 0 200px;
     justify-content: center;
     align-items: center;
 }
