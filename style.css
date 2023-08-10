@@ -158,7 +158,7 @@ h1.two {
     margin-bottom: 0;
     flex-wrap: 1 wrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .name {
@@ -176,6 +176,8 @@ h1.two {
     padding: 0 200px;
     margin: 100px 200px;
     color: #F9FAF8;
+    text-overflow: ellipsis;
+    overflow: scroll;
 }
 
 .four, button {
