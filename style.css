@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     align-items: stretch;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -145,7 +145,7 @@ h1.two {
     background-color: #E5E7EB;
     padding: 0 350px;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     flex-wrap: wrap;
 }
 
