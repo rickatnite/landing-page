@@ -72,8 +72,6 @@ img {
     display: flex;
     color: #F9FAF8;
     height: 400px;
-    /* justify-content: center; */
-    /* flex-shrink: 1; */
     min-width: 0;
 }
 
@@ -81,26 +79,17 @@ img {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* gap: 50px; */
-    /* flex: 1 1 0; */
     padding: 50px 100px;
-    /* align-items: center; */
     justify-content: center;
 }
 
 .left {
-    /* flex-wrap: wrap; */
     align-items: flex-start;
-    /* justify-content: space-around; */
 }
 
 .right img {
     height: auto;
     width: 100%;
-    /* max-width: 400px; */
-    /* min-width: 0; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 button {
@@ -121,21 +110,12 @@ button {
     color: #E5E7EB;
 }
 
-/* .two.h1 {
-    font-weight: bolder;
-    font-size: 36px;
-    color: #1F2937;
-    margin-bottom: 30px;
-    text-align: center;
-} */
-
 h1.two {
     display: flex;
     font-weight: bolder;
     font-size: 36px;
     color: #1F2937;
     margin-bottom: 30px;
-    /* justify-content: center; */
     text-align: center;
 
 }
@@ -143,7 +123,7 @@ h1.two {
 .two {
     display: flex;
     height: 400px;
-    padding: 0 200px;
+    padding: 0 350px;
     text-align: center;
     flex-direction: column;
 }
@@ -160,36 +140,32 @@ h1.two {
 
 .three {
     display: flex;
-    /* flex-shrink: 1; */
-    /* align-items: center; */
     justify-content: center;
-    min-height: 400px;
+    height: 400px;
     background-color: #E5E7EB;
-    padding: 0 200px;
+    padding: 0 350px;
     flex-direction: column;
-    flex: 1 1 50%;
-    /* min-width: 0; */
-    /* flex-wrap: wrap; */
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .text {
     display: flex;
-    flex: 1 1 0;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
     align-items: center;
+    margin-bottom: 0;
+    flex-wrap: 1 wrap;
     text-overflow: ellipsis;
-
-    /* min-width: 0; */
-    /* min-height: 0; */
-    /* flex-wrap: wrap; */
+    overflow: hidden;
 }
 
 .name {
     display: flex;
     font-weight: bolder;
     font-size: x-large;
+    margin-top: 0;
     align-self: flex-end;
 }
 
